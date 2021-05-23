@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <title>Trading View Survey</title>
+
+  </head>
+  <body>
+    <div class="container w-50 mt-5">
+        <a href="https://www.tradingview.com/chart/?symbol=NASDAQ:AAPL&source=unauth_header&feature=launch_chart" target="_blank"><img src="images/tradingviewlogo.png" class="img-responsive mb-4 logo"></a>
+    </div>
+    
+    <div class=" bg-secondary container w-50 mt-5 pb-3 border topborder pageTitleDiv">
+        <p class="pageTitle">TradingView Customer Servey</p>
+        <p>We are collecting data about <a href="https://www.tradingview.com" targed="_blank">TradingView</a> to improve your user experience</p>
+    </div>
+    
+    <form class="container w-50 border bottomborder mb-5 p-5">
+        
+        <div class="form-group mb-5">
+            <label >E-Mail</label>
+            <input type="text" placeholder="Enter E-Mail Here" class="form-control">
+            <small id="emailHelp" class="form-text text-muted">Emails aren't shared to anyone but can be used to contact you for further questions</small>
+        </div>
+
+        <div class="mb-5">
+            <p>How intuitive are the left hand side buttons in the picture above taken from the website</p>
+            <img src="images/tradingview.PNG" class="img-responsive mb-4 screenshot">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                <label class="form-check-label" for="exampleRadios1">
+                  Very counterintuitive
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                  Slightly counterintuitive
+                </label>
+              </div>
+              
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" checked>
+                <label class="form-check-label" for="exampleRadios3">
+                  Neither counterintuitive nor intuitive
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                <label class="form-check-label" for="exampleRadios4">
+                  Slightly intuitive
+                </label>
+              </div> 
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option5">
+                <label class="form-check-label" for="exampleRadios5">
+                  Very intuitive
+                </label>
+              </div> 
+        </div>
+        <br>
+        <div class="mb-5">
+            <p>What type of securities do you trade using tradeview</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Stocks
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Futures
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck3">
+                  Forwards
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck4">
+                  Options
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck5">
+                  Swaps
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group mb-5">
+            <p>Which stocks do you chart the most using tradingview</p>
+            <input type="text" placeholder="Please seperate stocks with commas and use their respective stock symbols" class="form-control">
+        </div>
+
+        <div class="form-group mb-5">
+            <p>On a scale of 1-10 (1 being the worst) how concise and informative is the stock information at the bottom right of the page?</p>
+            <select id="profit" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        
+
+        <div class="slidecontainer mb-5">
+            <p>
+                Using the scale indicate how cramped do you think the graphing buttoms are?
+                <br>
+                <small class="form-text text-muted">Slide more to the left the lest you feel its cramped and more to the right for the opposite</small>
+            </p>
+            
+            
+            <div class="container slider-container">
+                <small class="form-text text-muted">Not Cramped</small>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <small class="form-text text-muted">Too Cramped</small>
+            </div>
+        </div>
+
+        <div class="form-group mb-5">
+            <p>What is your over-all impression on the way information is displayed on this page</p>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="container text-center">
+            <button type="button" class="btn btn-success m-*-auto">Submit</button>
+        </div>
+    </form>
+
+    <div class="container text-center">
+        <p> Website created by Youcef Ben Ali</p>
+    </div>
+  </body>
+
+</html>
